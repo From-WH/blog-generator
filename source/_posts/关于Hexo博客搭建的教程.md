@@ -16,7 +16,8 @@ tags: hexo博客
 - 把第 6 行的 `title:xxx`  改成你想要的博客名字
 - 把第 9 行的 `author:xxx` 改成姓名
 - 把最后一行的 `type` 改成 `type: git`（记住前面有个空格）
-- 在最后一行后面新增一行，左边与 `type` 平齐，加上一行 `repo: 仓库地址：xxxxx`（在github上创建一个空的仓库，此处填写地址，最好为SSH地址）
+- 在最后一行后面新增一行，左边与 `type` 平齐，加上一行 `repo: 仓库地址：xxxxx`（在github上创建一个空的仓库，此处填写地址，最好为SSH地址）  
+
 10.`npm install hexo-deployer-git --save`，安装 git 部署插件
 11.`hexo deploy`
 12.进入「你的用户名.github.io」对应的 repo，打开 GitHub Pages 功能，如果已经打开了，就直接点击预览链接
