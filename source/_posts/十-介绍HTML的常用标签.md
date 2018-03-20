@@ -25,6 +25,7 @@ html标签
 根据协议规定，在没有内容的情况下是可以省略的
 - body标签
 只要第一个不是空格且没有注释的情况下也是可以不写的
+```
 **<a> anchor 锚点
 <form> 表单
 <input> 输入
@@ -45,6 +46,7 @@ html标签
 <audio> 音频
 <svg> Scalable Vector Graphics不规则的图形
 <alt> alternative可选内容**
+```
 
 除了 div 和 span，其他标签都有默认样式
 - a标签
