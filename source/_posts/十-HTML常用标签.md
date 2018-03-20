@@ -1,9 +1,9 @@
 ---
-title: 十.介绍HTML的常用标签.md
-date: 2018-03-20 21:08:52
-tags: HTML常用标签
+title: 十.HTML常用标签
+date: 2018-03-20 22:21:16
+tags:
 ---
-## HTML（HypeText Markup language）超文本标记语言
+# HTML（HypeText Markup language）超文本标记语言
 - 版本历史：
 HTML 的版本（W3C 组织制定规范）
 1.HTML 4.01
@@ -47,7 +47,6 @@ html标签
 <svg> Scalable Vector Graphics不规则的图形
 <alt> alternative可选内容**
 ```
-
 除了 div 和 span，其他标签都有默认样式
 - a标签
 download属性：表示是用来下载
@@ -90,7 +89,7 @@ colgroup中col设置每一列宽高
 CSS中加入`border-collapse：collapse；`可以使表格直接的空隙取消
 ![image.png](https://upload-images.jianshu.io/upload_images/11007474-57bc84d14d1b7e14.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```
-            <table>
+        <table>    
             <thead>
                 <tr>
                     <th>姓名</th><th>学校</th><th>年级</th><th>班级</th>
