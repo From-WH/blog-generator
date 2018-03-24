@@ -23,6 +23,7 @@ tags:
 - link rel（relationship 关系）外部引入
 - 利用@import url 外部CSS再引入CSS
 ![image.png](https://upload-images.jianshu.io/upload_images/11007474-d353a6c93f34c1a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ### 4.常见的CSS属性
 - 常见的块级元素和行内元素：
 块级元素：h/p/div/hr/form/ui/ol/li/dl/dt/dd/pre/table/tr/td/th
@@ -82,6 +83,7 @@ color：文本颜色
 7、光标属性：cursor
 8、页面样式属性：page、page-break-inside、windows、orphans
 9、声音样式属性：speak、speak-punctuation、speak-numeral、speak-header、speech-rate、volume、voice-family、pitch、pitch-range、stress、richness、、azimuth、elevation
+
 ### 6.div
 - div的高度及流动
 文档流：就是文档内元素的流动方向
@@ -90,6 +92,7 @@ color：文本颜色
 块级元素的高度由内部文档流元素的高度决定
 特殊单词较长的情况 需要word break：break-all； 才会被打断换行
 行高字体默认有一个建议行高，不同的字体建议行高不同
+
 ### 7.background
 - background-size: 设置背景图片大小
 contain 或 cover:
@@ -103,3 +106,27 @@ contain 或 cover:
 **绝对定位元素（absolutely positioned element）**是[计算后](https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value)位置属性为 `absolute` 或 `fixed` 的元素。
 **粘性定位元素**（**stickily positioned element**）**是[计算后](https://developer.mozilla.org/zh-CN/docs/Web/CSS/computed_value)位置属性为 `sticky` 的元素
 - max-width 最大宽度
+
+### 8.display的几个常用属性
+- `none` 关闭一个元素的显示（对布局没有影响）；其所有后代元素都也被会被关闭显示。文档渲染时，该元素如同不存在要想让元素在隐藏的同时占据其原有的位置
+- `inline`  该元素生成一个或多个行内元素盒。
+- `block`  该元素生成一个块元素盒。 
+- `list-item` 该元素生成一个容纳内容和单独的列表行内元素盒的块状盒。 
+- `inline-block`该元素生成一个块状盒，该块状盒随着周围内容流动，如同它是一个单独的行内盒子（表现更像是一个被替换的元素）
+**加了dinline-block后一般都要在加一个vertical-align：top；来清除bug**
+### 9.伪类
+- :nth-child(an+b) 匹配文档树中在其之前具有 an+b-1 个兄弟节点的元素，其中 n 为正值或零值
+0n+3 或简单的 3 匹配第三个元素。
+1n+0 或简单的 n 匹配每个元素。（兼容性提醒：在 Android 浏览器 4.3 以下的版本 n 和 1n 的匹配方式不一致。1n 和 1n+0 是一致的，可根据喜好任选其一来使用。）
+2n+0 或简单的 2n 匹配位置为 2、4、6、8...的元素。你可以使用关键字 even 来替换此表达式。
+2n+1 匹配位置为 1、3、5、7...的元素。你可以使用关键字 odd 来替换此表达式。
+3n+4 匹配位置为 4、7、10、13...的元素。
+：一个冒号是伪类
+：：两个冒号是伪元素
+
+---
+**单词**
+`transition：box-shadow 1s；`过度效果 给谁添加 过程1S
+protfolio 作品集
+box-sizing: border-box; 使这个盒子的宽度包含margin和padding
+
