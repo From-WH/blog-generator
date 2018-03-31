@@ -1,5 +1,5 @@
 ---
-title: 三.VSCode安装及配置
+title: VSCode安装及配置
 date: 2018-03-20 22:12:58
 tags:
 ---

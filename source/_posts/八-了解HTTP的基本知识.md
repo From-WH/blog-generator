@@ -1,5 +1,5 @@
 ---
-title: 八.了解HTTP的基本知识
+title: 了解HTTP的基本知识
 date: 2018-03-20 22:20:10
 tags:
 ---

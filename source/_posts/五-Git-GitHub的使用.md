@@ -1,5 +1,5 @@
 ---
-title: 五.Git+GitHub的使用
+title: Git+GitHub的使用
 date: 2018-03-20 22:19:13
 tags:
 ---
@@ -13,6 +13,7 @@ tags:
 6.接下来我们`git commit -m "文件信息"`（将这个文件正式的提交至本地仓库）
 7.你使用 `git log` 就可以看到历史上的变动
 完成以上步骤，本地的仓库就创建完成了。
+
 # 2.将本地仓库上传至GitHub
 - 在GitHub上创建一个空仓库
 ![image.png](https://upload-images.jianshu.io/upload_images/11007474-c10d1686a0c533a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
@@ -20,6 +21,7 @@ tags:
 - 然后在Git中之前创建的仓库中运行如图画圈的两行命令（建议选择SSH地址）
 ![image.png](https://upload-images.jianshu.io/upload_images/11007474-04628131fe9d66a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
 然后刷新当前页面，你的仓库就上传到 GitHub 了！神不神奇？激不激动？
+
 # 3. **下载 GitHub 上的仓库到本地**（刚开始建库在GitHub，然后下载，觉得这个好用）
 - 创建及下载步骤
 ![image.png](https://upload-images.jianshu.io/upload_images/11007474-fc1fef603a4eba97.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
@@ -51,6 +53,7 @@ git push
 ```
 最好学会在VSCode里push，很方便！
 <br/>
+
 # 最后在这里交大家怎么删除GitHub上创建的库
 1.首先点击你在GitHub里创建的仓库，点击settings
 ![image.png](https://upload-images.jianshu.io/upload_images/11007474-585fd7e9f3b225aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
