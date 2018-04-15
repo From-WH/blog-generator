@@ -124,45 +124,46 @@ window.jQuery = function (nodeOrSelector) {
 ```
 实现一个 jQuery 的 API
 ```
-window.jQuery = function (nodeOrSelector) { 
-    let nodes = {}
-    if (typeof nodeOrSelector === 'string') {
-        let temp = document.querySelectorAll(nodeOrSelector)  //伪数组
-        for (let i = 0; i < temp.length; i++) { 
-            nodes[i] = temp[i]
+window.jQuery = function (nodeOrSelector) {     获取节点或字符串
+    let $nodes = {}                             //初始化一个空对象，将之后字符串或数组放进去
+    if (typeof nodeOrSelector === 'string') {   //识别输入的是节点还是字符串
+        let temp = document.querySelectorAll(nodeOrSelector)
+        for (let i = 0; i < temp.length; i++) {
+            $nodes[i] = temp[i]
         }
-        nodes.length = temp.length
-    } else if (nodeOrSelector instanceof Node) {
+        $nodes.length = temp.length
+    } else if (nodeOrSelector instanceof Node) {     //如果是节点那么久把它放入伪数组
         nodes = {
             0: nodeOrSelector,
             length: 1
         }
     }
-    nodes.addClass = function (classes) {
+    $nodes.addClass = function (classes) {      //获取参数，遍历找到相关节点，给相关节点添加value
         classes.forEach((value) => {
-            for (let i = 0; i < nodes.length; i++) {
-                nodes[i].classList.add(value)
+            for (let i = 0; i < $nodes.length; i++) {
+                $nodes[i].classList.add(value)
             }
         })
     }
-    nodes.setText = function (text) {
-        if(text === undefined){
+    $nodes.setText = function (text) {
+        if (text === undefined) {               //如果文本为空，则添加文本
             var texts = []
-            for(let i=0; i<nodes.length;i++){
-                texts.push(nodes[i].textContent)
+            for (let i = 0; i < $nodes.length; i++) {
+                texts.push($nodes[i].textContent)
             }
             return texts
-        }else {
-            for(let i = 0; i < nodes.length; i++){
-                nodes[i].textContent = text
+        } else {                      //否则输出文本内容
+            for (let i = 0; i < $nodes.length; i++) {
+                $nodes[i].textContent = text
             }
         }
     }
-    return nodes
+    return $nodes
 }
-var node2 = jQuery('ul>li')
-node2.addClass(['red']) // 可将所有 div 的 class 添加一个 red
-node2.getText('hi') 给所有li里添加一个hi
+window.$ = jQuery
+var $div = $('div')
+$div.addClass(['red']) // 可将所有 div 的 class 添加一个 red
+$div.setText('hi') // 可将所有 div 的 textContent 变为 hi
 ```
 
 #### 7.jQuery与DOM转换
