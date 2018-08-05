@@ -1,6 +1,6 @@
 ---
 layout: ajax
-title: 小知识
+title: AJAX小知识
 date: 2018-07-12 19:48:18
 tags:
 ---
@@ -118,13 +118,13 @@ tags:
 
     *   `request.readyState` XMLHttpRequest 的状态。从 0 到 4 发生变化
 
-        | 值 | readyState 状态 | 意义 |
-        | :-: | :-: | :-: |
-        | 0 | `UNSENT`(未打开) | `open()`方法还未被调用，请求未初始化 |
-        | 1 | `OPENED` (未发送) | `open()`方法已经被调用， 服务器连接已建立 |
-        | 2 | HEADERS_RECEIVED (已获取响应头) | `send()`方法已经被调用, 响应头和响应状态已经返回.请求已接收 |
-        | 3 | LOADING (正在下载响应体) | 响应体下载中; `responseText`中已经获取了部分数据. |
-        | 4 | DONE (请求完成) | 整个请求过程已经完毕. |
+| 值 | readyState 状态 | 意义 |
+| --- | --- | --- |
+| 0 | `UNSENT`(未打开) | `open()`方法还未被调用，请求未初始化 |
+| 1 | `OPENED` (未发送) | `open()`方法已经被调用， 服务器连接已建立 |
+| 2 | HEADERS_RECEIVED (已获取响应头) | `send()`方法已经被调用, 响应头和响应状态已经返回.请求已接收 |
+| 3 | LOADING (正在下载响应体) | 响应体下载中; `responseText`中已经获取了部分数据. |
+| 4 | DONE (请求完成) | 整个请求过程已经完毕. |
 
         *   `request.status` 200表示OK；404表示未找到页面。
 
